@@ -62,7 +62,17 @@
 
       <p><a id="special-characters"></a></p>
 
-      <h4 id="whitespace-characters" class="numbered">Whitespace characters</h4>
+      <h4 id="whitespace-characters" class="numbered">
+        Whitespace characters
+        <span
+          ><a
+            target="_blank"
+            href="https://eslint.org/docs/latest/rules/no-irregular-whitespace"
+            >ESLint Rule: no-octal-escape</a
+          >
+          <span> (recommend) </span>
+        </span>
+      </h4>
 
       <p>
         Aside from the line terminator sequence, the ASCII horizontal space
@@ -73,6 +83,14 @@
 
       <h4 id="special-escape-sequences" class="numbered">
         Special escape sequences
+        <span
+          ><a
+            target="_blank"
+            href="https://eslint.org/docs/latest/rules/no-octal-escape"
+            >ESLint Rule: no-octal-escape</a
+          >
+          <span> (custom) </span>
+        </span>
       </h4>
 
       <p>
@@ -155,7 +173,30 @@ const output = '\ufeff' + content;
  */
 </code></pre>
 
-      <h3 id="imports" class="numbered">Imports</h3>
+      <h3 id="imports" class="numbered">
+        Imports
+        <span>
+          <a
+            target="_blank"
+            href="https://github.com/import-js/eslint-plugin-import"
+          >
+            ESLint Plugin: import
+          </a>
+        </span>
+      </h3>
+      <ul>
+        <li>
+          <span>
+            <a
+              target="_blank"
+              href="https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-unassigned-import.md"
+            >
+              ESLint Rule: import/no-unassigned-import
+            </a>
+          </span>
+          <span> (custom) </span>
+        </li>
+      </ul>
 
       <p>There are four variants of import statements in ES6 and TypeScript:</p>
 
@@ -343,7 +384,18 @@ function copyFooBar(foo: Foo, bar: Bar) {...}
         </li>
       </ol>
 
-      <h3 id="exports" class="numbered">Exports</h3>
+      <h3 id="exports" class="numbered">
+        Exports
+        <span>
+          <a
+            target="_blank"
+            href="https://github.com/import-js/eslint-plugin-import/blob/main/docs/rules/no-default-export.md"
+          >
+            ESLint Rule: import/no-default-export
+          </a></span
+        >
+        <span> (custom) </span>
+      </h3>
 
       <p>Use named exports in all code:</p>
 
@@ -511,7 +563,17 @@ export function bar() { return 1; }
 
       <h3 id="import-export-type" class="numbered">Import and export type</h3>
 
-      <h4 id="import-type" class="numbered">Import type</h4>
+      <h4 id="import-type" class="numbered">
+        Import type
+        <span>
+          <a
+            target="_blank"
+            href="https://typescript-eslint.io/rules/consistent-type-imports"
+            >ESLint Rule: consistent-type-imports
+          </a>
+        </span>
+        <span> (custom) </span>
+      </h4>
 
       <p>
         You may use <code>import type {...}</code> when you use the imported
@@ -554,7 +616,17 @@ import {type Foo, Bar} from './foo';
         </p>
       </section>
 
-      <h4 id="export-type" class="numbered">Export type</h4>
+      <h4 id="export-type" class="numbered">
+        Export type
+        <span>
+          <a
+            target="_blank"
+            href="https://typescript-eslint.io/rules/consistent-type-exports"
+            >ESLint Rule: consistent-type-exports
+          </a>
+        </span>
+        <span> (custom) </span>
+      </h4>
 
       <p>Use <code>export type</code> when re-exporting a type, e.g.:</p>
 
@@ -588,6 +660,14 @@ import {type Foo, Bar} from './foo';
 
       <h4 id="use-modules-not-namespaces" class="numbered">
         Use modules not namespaces
+        <span>
+          <a
+            target="_blank"
+            href="https://typescript-eslint.io/rules/no-namespace"
+            >ESLint Rule: no-namespace
+          </a>
+        </span>
+        <span> (recommend) </span>
       </h4>
 
       <p>
@@ -681,6 +761,12 @@ let bar = someValue;     // Use if "bar" is ever assigned into later on.
 
       <h4 id="one-variable-per-declaration" class="numbered">
         One variable per declaration
+        <span>
+          <a target="_blank" href="https://eslint.org/docs/latest/rules/one-var"
+            >ESLint Rule: one-var
+          </a>
+        </span>
+        <span> (custom) </span>
       </h4>
 
       <p>
@@ -697,6 +783,14 @@ let bar = someValue;     // Use if "bar" is ever assigned into later on.
 
       <h4 id="array-constructor" class="numbered">
         Do not use the <code>Array</code> constructor
+        <span>
+          <a
+            target="_blank"
+            href="https://typescript-eslint.io/rules/no-array-constructor"
+            >ESLint Rule: no-array-constructor
+          </a>
+        </span>
+        <span> (recommend) </span>
       </h4>
 
       <p>
@@ -729,6 +823,14 @@ Array.from&lt;number&gt;({length: 5}).fill(0);
 
       <h4 id="do-not-define-properties-on-arrays" class="numbered">
         Do not define properties on arrays
+        <span>
+          <a
+            target="_blank"
+            href="https://eslint.org/docs/latest/rules/no-extend-native"
+            >ESLint Rule: no-extend-native
+          </a>
+        </span>
+        <span> (custom) </span>
       </h4>
 
       <p>
@@ -831,6 +933,14 @@ let [, b,, d] = someArray;
 
       <h4 id="object-constructor" class="numbered">
         Do not use the <code>Object</code> constructor
+        <span>
+          <a
+            target="_blank"
+            href="https://eslint.org/docs/latest/rules/no-new-object"
+            >ESLint Rule: no-new-object
+          </a>
+        </span>
+        <span> (custom) </span>
       </h4>
 
       <p>
@@ -838,7 +948,17 @@ let [, b,, d] = someArray;
         (<code>{}</code> or <code>{a: 0, b: 1, c: 2}</code>) instead.
       </p>
 
-      <h4 id="iterating-objects" class="numbered">Iterating objects</h4>
+      <h4 id="iterating-objects" class="numbered">
+        Iterating objects
+        <span>
+          <a
+            target="_blank"
+            href="https://eslint.org/docs/latest/rules/guard-for-in"
+            >ESLint Rule: guard-for-in
+          </a>
+        </span>
+        <span> (custom) </span>
+      </h4>
 
       <p>
         Iterating objects with <code>for (... in ...)</code> is error prone. It
@@ -985,7 +1105,17 @@ function nontrivialDefault({num, str}: Options = {num: 42, str: 'default'}) {}
 
       <h3 id="classes" class="numbered">Classes</h3>
 
-      <h4 id="class-declarations" class="numbered">Class declarations</h4>
+      <h4 id="class-declarations" class="numbered">
+        Class declarations
+        <span>
+          <a
+            target="_blank"
+            href="https://eslint.org/docs/latest/rules/no-extra-semi"
+            >ESLint Rule: no-extra-semi
+          </a>
+        </span>
+        <span> (custom) </span>
+      </h4>
 
       <p>Class declarations <em>must not</em> be terminated with semicolons:</p>
 
@@ -1285,7 +1415,23 @@ class NoInstantiation {
 
       <h4 id="class-members" class="numbered">Class members</h4>
 
-      <h5 id="private-fields" class="numbered">No #private fields</h5>
+      <h5 id="private-fields" class="numbered">
+        No #private fields
+        <span>
+          <a
+            target="_blank"
+            href="https://eslint.org/docs/latest/rules/no-unused-private-class-members"
+            >ESLint Rule: no-unused-private-class-members
+          </a>
+        </span>
+        <span> (custom) </span>
+      </h5>
+
+      <a
+        target="_blank"
+        href="https://github.com/typescript-eslint/typescript-eslint/issues/4571#issuecomment-1272609077"
+        >Discussion: private vs # in class</a
+      >
 
       <p>Do not use private fields (also known as private identifiers):</p>
 
